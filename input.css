@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+    /*custom colours*/
+    --color-primary: #5cb5b0;
+    --color-primary-dark: #4a9d99;
+    --color-white: #ffffff;
+    --color-gray-light: #f5f5f5;
+    --color-gray-medium: #e0e0e0;
+    --color-gray-dark: #666666;
+    --color-text-dark: #2d3748;
+    
+/*--------------------------------------------------------------------------------------------------*/
+    /*custom text-sizes*/
+    --font-size-title: 24px;
+    --font-size-subtitle: 18px;
+    --font-size-body: 16px;
+    --font-size-small: 14px;
+    
+/*--------------------------------------------------------------------------------------------------*/
+    /*custom spacing*/
+    --spacing-card-padding: 2rem;
+    --spacing-section: 3rem;
+    
+/*--------------------------------------------------------------------------------------------------*/
+    /*custom border-radius*/
+    --radius-card: 1rem;
+    --radius-button: 0.5rem;
+    --radius-input: 0.375rem;
+    
+/*--------------------------------------------------------------------------------------------------*/
+    /*custom shadows*/
+    --shadow-card: 0 10px 25px -5px rgb(63 140 141 / 0.3), 0 8px 10px -6px rgb(63 140 141 / 0.2);
+    --shadow-button: 0 2px 4px rgb(63 140 141 / 0.15);
+}
