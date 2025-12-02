@@ -1,0 +1,89 @@
+@import "tailwindcss/utilities";
+
+/* Tes variables personnalisées (on garde tout) */
+@theme {
+  --color-primary: #5CB8BA;
+  --color-primary-dark: #4A9FA1;
+  --color-bg-light: #CADFDF;
+  --color-text-dark: #333333;
+  --color-text-gray: #666666;
+
+  --font-size-brand: 19px;
+  --font-size-navlink: 15px;
+  --font-size-hero: 48px;
+  --font-size-subtitle: 20px;
+  --font-size-info: 15px;
+  --font-size-chattitle: 18px;
+  --font-size-status: 13px;
+  --font-size-bubble: 15px;
+  --font-size-time: 12px;
+  --font-size-role: 11px;
+
+  --spacing-70px: 70px;
+  --spacing-89px: 89px;
+
+  --radius-hero: 24px;
+  --radius-chat: 20px;
+
+  --shadow-nav: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-hero: 0 8px 24px rgba(92,184,186,0.3);
+  --shadow-btn: 0 8px 16px rgba(92,184,186,0.25);
+  --shadow-btn-hover: 0 12px 24px rgba(92,184,186,0.35);
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.1);
+  --shadow-send: 0 4px 12px rgba(92,184,186,0.3);
+  --shadow-send-hover: 0 6px 16px rgba(92,184,186,0.4);
+}
+
+/* LES CLASSES QUI MANQUAIENT OU ÉTAIENT MAL ÉCRITES */
+@layer utilities {
+  /* Couleurs de fond */
+  .bg-primary       { background-color: #5CB8BA !important; }
+  .bg-primary-dark  { background-color: #4A9FA1 !important; }
+  .hover\:bg-primary-dark:hover { background-color: #4CA7A9 !important; }
+
+  /* Opacités */
+  .bg-primary\/5  { background-color: rgba(92,184,186,0.05) !important; }
+  .bg-primary\/10 { background-color: rgba(92,184,186,0.10) !important; }
+  .bg-primary\/20 { background-color: rgba(92,184,186,0.20) !important; }
+  .bg-primary\/25 { background-color: rgba(92,184,186,0.25) !important; }
+
+  /* Texte & bordures */
+  .text-primary   { color: #5CB8BA !important; }
+  .border-primary { border-color: #5CB8BA !important; }
+
+  /* Ombres */
+  .shadow-nav        { box-shadow: var(--shadow-nav) !important; }
+  .shadow-hero       { box-shadow: var(--shadow-hero) !important; }
+  .shadow-btn        { box-shadow: var(--shadow-btn) !important; }
+  .shadow-card       { box-shadow: var(--shadow-card) !important; }
+  .shadow-send       { box-shadow: var(--shadow-send) !important; }
+  .hover\:shadow-btn-hover:hover { box-shadow: var(--shadow-btn-hover) !important; }
+  .hover\:shadow-send-hover:hover { box-shadow: var(--shadow-send-hover) !important; }
+
+  /* Tailles de police */
+  .text-brand    { font-size: 19px; }
+  .text-navlink  { font-size: 15px; }
+  .text-hero     { font-size: 48px; }
+  .text-subtitle { font-size: 20px; }
+  .text-info     { font-size: 15px; }
+  .text-chattitle{ font-size: 18px; }
+  .text-status   { font-size: 13px; }
+  .text-bubble   { font-size: 15px; }
+  .text-time     { font-size: 12px; }
+  .text-role     { font-size: 11px; }
+
+  /* LE PLUS IMPORTANT : les gradients from/to */
+  .from-primary       { --tw-gradient-from: #5CB8BA !important; }
+  .to-primary-dark    { --tw-gradient-to: #4A9FA1 !important; }
+  .from-primary-dark  { --tw-gradient-from: #4A9FA1 !important; }
+  .to-primary         { --tw-gradient-to: #5CB8BA !important; }
+}
+
+/* Animation du point "en ligne" */
+@keyframes pulse-custom {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.animate-pulse-custom {
+  animation: pulse-custom 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

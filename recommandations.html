@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommandations IA - ESPRIT Covoiturage</title>
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(.9)} }
+    .animate-pulse-custom { animation: pulse 2s infinite; }
+  </style>
+</head>
+<body class="bg-[#CADFDF] text-[#333333] min-h-screen flex flex-col font-sans">
+
+  <!-- HEADER IDENTIQUE À COVOLTBOT -->
+  <nav class="bg-white shadow-nav sticky top-0 z-50">
+    <div class="max-w-[1400px] mx-auto px-12 h-[70px] flex items-center justify-between">
+      <div class="flex items-center gap-[14px]">
+        <div class="w-[52px] h-[52px] rounded-xl overflow-hidden">
+          <img src="public/imglogo9182-c73h-200h.png" alt="Logo" class="w-full h-full object-cover">
+        </div>
+        <span class="text-brand font-bold">ESPRITCovoiturage</span>
+      </div>
+      <div class="flex items-center gap-8">
+        <a href="#" class="text-text-gray text-navlink font-medium hover:text-text-dark transition">Covoiturage</a>
+        <a href="#" class="text-text-dark text-navlink font-medium">CovoltBot</a>
+        <a href="#" class="text-text-gray text-navlink font-medium hover:text-text-dark transition">Groupe</a>
+        <a href="#" class="text-text-gray text-navlink font-medium hover:text-text-dark transition">Taxi</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-3 px-[8px] py-[6px] pr-6 border-2 border-primary rounded-full bg-white">
+          <div class="w-[52px] h-[52px] bg-primary rounded-full flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </div>
+          <div class="flex flex-col gap-1">
+            <span class="text-sm font-semibold">Maram Boussalem</span>
+            <span class="text-role font-semibold text-text-gray uppercase tracking-wider bg-[#E8F4F4] px-3 py-1 rounded-xl text-center">PASSAGER</span>
+          </div>
+        </div>
+        <button class="bg-primary hover:bg-primary-dark text-white font-bold text-base px-10 py-4 rounded-full shadow-btn hover:shadow-btn-hover hover:-translate-y-0.5 transition-all">
+          Déconnexion
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+   <!-- HERO -->
+   <div class="text-center pt-16 pb-20">
+    <div class="w-[100px] h-[100px] bg-gradient-to-br from-primary to-primary-dark rounded-hero shadow-hero mx-auto mb-8 flex items-center justify-center">
+      <img src="public/image589180-yts2-200h-removebg-preview.png" alt="CovoltBot" class="w-16 h-16">
+    </div>
+    <h1 class="text-hero font-extrabold mb-2">Recommandations IA</h1>
+    <p class="text-subtitle text-text-gray mb-12">Basé sur votre emploi du temps et vos horaires</p>
+
+    <!-- BULLE DE MESSAGE IA – PARFAITEMENT CENTRÉE COMME TU VEUX -->
+    <div class="flex justify-center mt-10">
+      <div class="bg-primary/5 border border-primary/20 rounded-[18px] px-6 py-4 text-base text-text-gray leading-relaxed max-w-2xl text-center shadow-md">
+        Bonjour ! Je suis votre assistant IA pour le covoiturage. Uploadez votre emploi du temps et je vous aiderai à trouver les meilleurs trajets !
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <!-- CARTES UNE SOUS L'AUTRE (vertical) -->
+  <div class="max-w-2xl mx-auto px-6 space-y-8 pb-20">
+
+    <!-- CARTE 1 -->
+    <div class="bg-white rounded-3xl shadow-card border border-gray-200 overflow-hidden">
+        <div class="bg-[#3f8c8d] text-white text-xs font-bold text-center py-3 rounded-t-3xl">
+            MEILLEURE OPTION
+          </div>      <div class="p-8">
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center gap-5">
+            <div class="w-16 h-16 bg-primary rounded-full flex-shrink-0 flex items-center justify-center">
+              <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-xl">NomPrenomConvoit1</h3>
+              <div class="flex items-center gap-4 text-text-gray text-sm mt-2">
+                <span class="flex items-center gap-1.5">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5h8a1 1 0 011 1v8a1 1 0 01-1 1H6a1 1 0 01-1-1V8a1 1 0 011-1z"/></svg>
+                  Lun. 8h30
+                </span>
+                <span class="flex items-center gap-1.5">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                  Ariana
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="text-right leading-tight">
+            <span class="text-3xl font-bold text-[#3f8c8d]/80">5</span>
+            <span class="text-xl font-medium text-[#3f8c8d]/80"> DT</span>
+          </div>
+                </div>
+
+        <div class="bg-[#F5F5F5] border border-[#E0E0E0] text-text-gray text-sm text-center rounded-full px-6 py-3 mb-8">
+          Compatible avec votre emploi du temps • Conducteur fiable (4.9 stars)
+        </div>
+
+        <button class="w-full bg-[#4ca7a9] hover:bg-[#41999b] text-white font-bold py-4 rounded-full shadow-btn hover:shadow-btn-hover transition-all transform hover:-translate-y-0.5">
+            Réserver
+          </button>
+      </div>
+    </div>
+
+    <!-- CARTE 2 -->
+    <div class="bg-white rounded-3xl shadow-card border border-gray-200 overflow-hidden">
+        <div class="bg-[#3f8c8d] text-white text-xs font-bold text-center py-3 rounded-t-3xl">
+            TRÈS BONNE OPTION
+          </div>      <div class="p-8">
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center gap-5">
+            <div class="w-16 h-16 bg-primary rounded-full flex-shrink-0 flex items-center justify-center">
+              <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-xl">Ahmed Ben Ali</h3>
+              <div class="flex items-center gap-4 text-text-gray text-sm mt-2">
+                <span class="flex items-center gap-1.5">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5h8a1 1 0 011 1v8a1 1 0 01-1 1H6a1 1 0 01-1-1V8a1 1 0 011-1z"/></svg>
+                  Mar. 7h45
+                </span>
+                <span class="flex items-center gap-1.5">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                  La Marsa
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="text-4xl font-extrabold text-primary">6 DT</div>
+        </div>
+
+        <div class="bg-[#F5F5F5] border border-[#E0E0E0] text-text-gray text-sm text-center rounded-full px-6 py-3 mb-8">
+          Très proche de vos horaires • Voiture confortable
+        </div>
+
+        <button class="w-full bg-[#4ca7a9] hover:bg-[#41999b] text-white font-bold py-4 rounded-full shadow-btn hover:shadow-btn-hover transition-all transform hover:-translate-y-0.5">
+            Réserver
+          </button>
+      </div>
+    </div>
+
+    <!-- CARTE 3 -->
+   <!-- CARTE 2 -->
+   <div class="bg-white rounded-3xl shadow-card border border-gray-200 overflow-hidden">
+    <div class="bg-[#3f8c8d] text-white text-xs font-bold text-center py-3 rounded-t-3xl">
+        TRÈS BONNE OPTION
+      </div>    <div class="p-8">
+      <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center gap-5">
+          <div class="w-16 h-16 bg-primary rounded-full flex-shrink-0 flex items-center justify-center">
+            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-xl">SARA Ben Ali</h3>
+            <div class="flex items-center gap-4 text-text-gray text-sm mt-2">
+              <span class="flex items-center gap-1.5">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5h8a1 1 0 011 1v8a1 1 0 01-1 1H6a1 1 0 01-1-1V8a1 1 0 011-1z"/></svg>
+                Mar. 7h45
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                La Marsa
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="text-4xl font-extrabold text-primary">5 DT</div>
+      </div>
+
+      <div class="bg-[#F5F5F5] border border-[#E0E0E0] text-text-gray text-sm text-center rounded-full px-6 py-3 mb-8">
+        Très proche de vos horaires • Voiture confortable
+      </div>
+
+      <button class="w-full bg-[#4ca7a9] hover:bg-[#41999b] text-white font-bold py-4 rounded-full shadow-btn hover:shadow-btn-hover transition-all transform hover:-translate-y-0.5">
+        Réserver
+      </button>
+    </div>
+  </div>
+  </div>
+
+  <!-- FOOTER IDENTIQUE -->
+  <footer class="bg-white mt-20 pt-12 border-t border-gray-200">
+    <div class="max-w-[1400px] mx-auto px-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-16 pb-8">
+        <div>
+          <h3 class="text-lg font-bold mb-4">ESPRITCovoiturage</h3>
+          <p class="text-sm text-text-gray leading-7 mb-6">
+            La plateforme de covoiturage dédiée exclusivement aux étudiants et au personnel d'ESPRIT.
+          </p>
+          <img src="https://www.esprit.tn/wp-content/themes/esprit/assets/img/Logo_ESPRIT.svg" alt="ESPRIT" class="w-[120px] opacity-80">
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Navigation</h3>
+          <ul class="space-y-2 text-sm text-text-gray">
+            <li><a href="#" class="hover:text-primary transition">Covoiturage</a></li>
+            <li><a href="#" class="hover:text-primary transition">Groupe</a></li>
+            <li><a href="#" class="hover:text-primary transition">Taxi</a></li>
+            <li><a href="#" class="hover:text-primary transition">CovoltBot</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Contact</h3>
+          <ul class="space-y-2 text-sm text-text-gray">
+            <li><a href="#" class="hover:text-primary transition">Email</a></li>
+            <li><a href="#" class="hover:text-primary transition">LinkedIn</a></li>
+            <li><a href="#" class="hover:text-primary transition">Instagram</a></li>
+            <li><a href="#" class="hover:text-primary transition">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-gray-300 my-8">
+      <div class="text-center pb-6 text-xs text-text-gray">
+        © 2025 ESPRIT Covoiturage. Tous droits réservés.
+      </div>
+      <div class="h-2 bg-primary"></div>
+    </div>
+  </footer>
+
+</body>
+</html>
