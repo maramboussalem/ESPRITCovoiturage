@@ -1,6 +1,6 @@
-@import "tailwindcss/utilities";
+@import "tailwindcss";
 
-/* Tes variables personnalisées (on garde tout) */
+/* Tes variables personnalisées */
 @theme {
   --color-primary: #5CB8BA;
   --color-primary-dark: #4A9FA1;
@@ -34,12 +34,13 @@
   --shadow-send-hover: 0 6px 16px rgba(92,184,186,0.4);
 }
 
-/* LES CLASSES QUI MANQUAIENT OU ÉTAIENT MAL ÉCRITES */
+/* LES CLASSES PERSONNALISÉES */
 @layer utilities {
   /* Couleurs de fond */
   .bg-primary       { background-color: #5CB8BA !important; }
   .bg-primary-dark  { background-color: #4A9FA1 !important; }
-  .hover\:bg-primary-dark:hover { background-color: #4CA7A9 !important; }
+  .bg-bg-light      { background-color: #CADFDF !important; }
+  .hover\:bg-primary-dark:hover { background-color: #4A9FA1 !important; }
 
   /* Opacités */
   .bg-primary\/5  { background-color: rgba(92,184,186,0.05) !important; }
@@ -49,7 +50,10 @@
 
   /* Texte & bordures */
   .text-primary   { color: #5CB8BA !important; }
+  .text-text-dark { color: #333333 !important; }
+  .text-text-gray { color: #666666 !important; }
   .border-primary { border-color: #5CB8BA !important; }
+  .border-primary\/20 { border-color: rgba(92,184,186,0.20) !important; }
 
   /* Ombres */
   .shadow-nav        { box-shadow: var(--shadow-nav) !important; }
@@ -72,7 +76,11 @@
   .text-time     { font-size: 12px; }
   .text-role     { font-size: 11px; }
 
-  /* LE PLUS IMPORTANT : les gradients from/to */
+  /* Border radius */
+  .rounded-hero { border-radius: 24px; }
+  .rounded-chat { border-radius: 20px; }
+
+  /* Gradients */
   .from-primary       { --tw-gradient-from: #5CB8BA !important; }
   .to-primary-dark    { --tw-gradient-to: #4A9FA1 !important; }
   .from-primary-dark  { --tw-gradient-from: #4A9FA1 !important; }
